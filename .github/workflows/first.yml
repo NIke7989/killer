@@ -1,10 +1,14 @@
-job:firstJob
-on:push
-job:
-  first_req
-    runs-on:ubuntu-latest
-      -name: list out files
+name: firstJob
+
+on:
+  push:
+    branches:
+      - main  # You can change this to the branch you want to trigger the workflow on
+
+jobs:
+  first_req:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: List out files
       run: ls -al
-
-
-    
