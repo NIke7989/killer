@@ -7,7 +7,7 @@ pipeline{
         stage('Checkout') {
             steps {
                 // Checkout code from your version control system (e.g., Git)
-                git url: 'https://github.com/your/repository.git', branch: 'main'
+                git url: 'https://github.com/NIke7989/killer.git', branch: 'main'
             }
         }
         
