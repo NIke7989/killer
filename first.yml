@@ -1,0 +1,10 @@
+job:firstJob
+on:push
+job:
+  first_req
+    runs-on:ubuntu-latest
+      -name: list out files
+      run: ls -al
+
+
+    
